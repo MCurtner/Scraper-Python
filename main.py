@@ -105,7 +105,7 @@ def worker(url):
     total_pages = int(get_total_pages(f'{url}?ipp=72&page=1#'))
     for page in range(1, total_pages + 1):
         print(f'Page: {page} of {total_pages}------------------------------')
-        get_all_products(f'{url}?ipp=72&page={x}#')
+        get_all_products(f'{url}?ipp=72&page={page}#')
 
 
 def main():
